@@ -5,6 +5,7 @@ if __name__ == '__main__':
     # Working CLI version
     view = UserResponseViewCLI()
     controller = UserResponseController(view)
+    print(controller.oneBlock())
     controller.fullExperiment()
 
     # Not working GUI version

@@ -18,6 +18,7 @@ class UserResponseController:
             while (not model.validInput(userInput)):
                 self.view.showDirection("Please input a valid answer")
                 userInput = self.view.getNumericalResponse(nextQuestion)
+            model.saveResponse(userInput)
 
         return model.responses
 
